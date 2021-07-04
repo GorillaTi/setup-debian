@@ -2,7 +2,7 @@
 ## Instalacion de Programas y configuracion de debian despues de ser instalado.
 * Creamos el archivo dwnld.sh
 ````bash
-cat <<-EOF> dwld.sh
+cat <<EOF > dnwld.sh
 #!/bin/bash
 # Script de Descarga de Archivos de instalacion y configuracion
 echo "Descargando paquete de Instalacion";
