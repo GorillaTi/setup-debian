@@ -2,10 +2,7 @@
 ## Instalacion de Programas y configuracion de debian despues de ser instalado.
 * Creamos el archivo dwnld.sh
 ````bash
-vim dwld.sh
-````
-* Pegamos el siguente codigo
-````code
+echo dwld.sh <<-EOC
 #!/bin/bash
 # Script de Descarga de Archivos de instalacion y configuracion
 echo "Descargando paquete de Instalacion";
@@ -17,6 +14,7 @@ else
     sudo apt install git;
     git clone https://github.com/GorillaTi/setup-debian.git;
 fi
+EOC
 ````
 * Cambiamos los permisos de Ejecucion
 ````bash
